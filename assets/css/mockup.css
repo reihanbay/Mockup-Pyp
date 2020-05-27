@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;    
+}
+
+.background {
+    background-image: url("../image/bg-vector.png");
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 100% 900px;
+    position: initial;
+    width: 100%;
+    height: 900px;
+}
+
+.default-content {
+    width: 100px;
+    height: 60px;
+}
+
+/* this is header navigation */
+.header {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.header-item {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header-item .logo {
+    left: 0;
+    padding: 10px 0;
+}
+
+.header-item a {
+    float: left;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 2px;
+}
+
+.header-item a:hover {color: #3DB5E2}
+
+.header-item a:active {
+  color: #3DB5E2;
+  transform: translateY(5px);
+}
+
+.header-item .item-right {
+    float: right;
+}
+
+.item-right .active {
+    cursor: pointer;
+    background-color: #3DB5E2;
+    color: #FDFDFD;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.item-right .active:hover {background-color: rgb(5, 119, 160)}
+
+.item-right .active:active {
+  background-color: rgb(5, 119, 160);
+  transform: translateY(5px);
+}
+
+.header-item .item-right a {
+    padding: 10px 28px 10px 28px;
+    margin: 10px 5px 10px 0;
+}
+
+/* this is content header */
+.header-content {
+    width: 90%;
+    display: table;
+    clear: both;
+    margin: 15% auto;
+}
+
+.left-column {
+    float: left;
+    width: 50%;
+}
+
+.right-column {
+    float: left;
+    width: 50%;
+}
+
+.right-column img {
+    margin-left: 40%;
+}
+
+.title-header {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FDFDFD;
+    letter-spacing: 0.05em;
+}
+
+.text {
+    margin-top: 4%;
+    width: 500px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #FDFDFD;
+}
+
+.btn-content {
+    display: inline-block;
+    width: 100%;
+    margin-top: 8%;
+}
+
+.left-btn {
+    float: left;
+    padding: 15px 40px 15px 50px;
+    background-color: #FDFDFD;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 2px solid #FDFDFD;
+}
+
+.right-btn {
+    margin-left: 4%;
+    float: left;
+    padding: 15px 40px 15px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 2px solid #FDFDFD;
+}
+
+.left-btn a {
+    color: #3274CC;
+}
+
+.right-btn a {
+    color: #FDFDFD;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* this is card body content */
+
+.content-body {
+    width: 100%;
+    height: 640px;
+    margin-top: 4%;
+}
+
+.text-content {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Roboto;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.card-content {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4%;
+    display: table;
+    clear: both;
+    text-align: center;
+}
+
+.centered {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card {
+    float: left;
+    width: 240px;
+    height: 300px;
+    margin: 3%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.card-image {
+    margin-top: 6%;
+}
+
+.title-card {
+    margin-top: 6%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.description-card {
+    padding: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    .background {
+        height: 1700px;
+        background-size: 200% 1700px;
+        z-index: -5;
+        background-position-x: -450px !important;
+        background-position-y: 0px !important;
+    }
+
+    .right-column {
+        float: left;
+        width: 10%;
+    }
+
+    .header-content {
+        width: auto;
+    }
+
+    .title-header {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 75px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        margin-bottom: 8%;
+    }
+
+    .left-column {
+        float: left;
+        width: auto;
+        margin: 50% auto;
+    }
+
+    .right-column img {
+        display: none;
+    }
+
+    .item-right {
+        display: none;
+    }
+
+    .header {
+        padding: 40px;
+        padding-left: 0px;
+    }
+
+    .logo {
+        width: 180%;
+    }
+
+    .header .container {
+        width: 100%;
+    }
+
+    .text {
+        margin-top: 0%;
+        width: auto;
+        font-size: 34px;
+    }
+
+    .btn-content {
+        margin-top: 20%;
+    }
+
+    .left-btn {
+        padding: 30px 80px 30px 80px;
+        border-radius: 60px;
+        font-size: 30px;
+        border: 4px solid #FDFDFD;
+    }
+
+    .right-btn {
+        padding: 30px 80px 30px 80px;
+        border-radius: 60px;
+        font-size: 30px;
+        border: 4px solid #FDFDFD;
+    }
+
+    .card-content {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .card {
+        width: 500px;
+        height: 700px;
+        margin: 0 10% 5% 10%;
+        border-radius: 50px;
+        box-shadow: 0px 11px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .card img {
+        width: 80%;
+    }
+
+    .text-content {
+        font-size: 75px;
+    }
+
+    .title-card {
+        font-size: 50px;
+        letter-spacing: 4.08px;
+        line-height: 130px;
+    }
+
+    .description-card {
+        font-size: 30px;
+        letter-spacing: 0.08px;
+        line-height: 35px;
+    }
+}
